@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>Restaurant</title>
+</head>
+<body>
+
+<section>
+	<ul class="tabs">
+		<li>El super resto</li>
+		<li>El super menu</li>
+		<li>Bouffe en photo</li>
+	</ul>
+
+<div class="container">
+
+	<div class="content active">
+		<img src="./fenouil-biocoop-magasin-bio-le-mans-rutabago-panier.jpg"/>
+		<h2>Le resto pas bio pas frais, cuisine à partir de nos restes qu'on en veut pas</h2>
+	</div>
+
+	<div class="content">
+		<h1>Le menu du jour</h1>
+		<br>
+		<h4 id="menu-item">Filet de turbot de la mer Noire façon sud-ouest une brunoise carotte-cèleri</h4>
+		<br>
+	<button onclick="generateMenu()">Générer un nouveau menu</button>
+	<script>
+
+		function generateMenu() {
+			
+			menuItem.innerHTML = (menu);
+		}
+
+	</script>
+	</div>
+
+	<div class="content">
+		<div class="app">
+			<header>
+			</header>
+			<div class="lists">
+				<div class="list">
+					<div class="list-item" draggable="true"><img src="./1.jpg"></div>
+					<div class="list-item" draggable="true"><img src="./2.jpg"></div>
+				</div>
+					<div class="list">
+				<div class="list-item" draggable="true"><img src="./3.jpg"></div>
+				<div class="list-item" draggable="true"><img src="./1.jpg"></div>
+				</div>
+					<div class="list">
+				<div class="list-item" draggable="true"><img src="./2.jpg"></div>
+				<div class="list-item" draggable="true"><img src="./3.jpg"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+</section>
+
+<div class="exit-intent-popup">
+	<div class="newsletter">
+			<b>Want to get updates to your mailbox? 📬</b>
+			<br>
+			<p>Subscribe to our newsletter!</p>
+			<br>
+			<input type="email" placeholder="Your email address" class="email" />
+			<button class="submit">Receive Newsletter</button>
+			<span class="close">x</span>
+	</div>
+</div>
+
+	<script src="menugenerator.js"></script>
+</body>
+</html>
